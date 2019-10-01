@@ -8,9 +8,17 @@
 </template>
 
 <script>
+
+import PlacarModal from './PlacarModal.vue'
+
 export default {
 
     name: 'novo-jogo',
+
+    components: {
+        PlacarModal
+    },
+    
 
     data(){
         return {

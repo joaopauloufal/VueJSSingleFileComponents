@@ -18,13 +18,15 @@
 </template>
 
 <script>
+
 import Titulo from './components/Titulo.vue'
 import NovoJogo from './components/NovoJogo.vue'
+import TabelaClubes from './components/TabelaClubes.vue'
 
 export default {
   name: 'app',
   components: {
-    Titulo, NovoJogo
+    Titulo, NovoJogo, TabelaClubes
   },
 
   data(){
