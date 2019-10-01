@@ -18,13 +18,14 @@
 <script>
 
 import Modal from './Modal.vue'
+import Clube from './Clube.vue';
 
 export default {
 
     name: 'placar-modal',
 
     components: {
-        Modal
+        Modal, Clube
     },
 
     props: ['timeCasa', 'timeFora'],

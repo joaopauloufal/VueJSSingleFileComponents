@@ -1,12 +1,18 @@
+import 'bootstrap/dist/css/bootstrap.min.css'
 import Vue from 'vue'
 import App from './App.vue'
 import Time from './time.js'
 
+import $ from 'jquery';
+import PooperJs from 'popper.js';
+
+window.jQuery = window.$ = $;
+window.Pooper = PooperJs;
+require('bootstrap');
+
 Vue.config.productionTip = false
 
-Vue.filter('ucwords', function(valor){
-  return valor.charAt(0).toUpperCase() + valor.slice(1);
-});
+Vue.filter('ucwords', valor => valor.charAt(0).toUpperCase() + valor.slice(1));
 
 
 new Vue({
