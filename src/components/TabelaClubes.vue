@@ -28,6 +28,9 @@
 </template>
 
 <script>
+
+import _ from 'lodash'
+
 export default {
 
     name: 'tabela-clubes',
@@ -50,7 +53,7 @@ export default {
 
 
         timesFiltrados(){
-            console.log('ordenou', this.ordem);
+            window.console.log('ordenou', this.ordem);
             var times = _.orderBy(this.timesColecao, this.ordem.colunas, this.ordem.orientacao);
             var self = this;
             return _.filter(times, function(time){
