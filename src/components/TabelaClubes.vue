@@ -5,7 +5,7 @@
             <thead>
                 <tr>
                     <th>Nome</th>
-                    <th v-for="(coluna, indice) in ordem.colunas">
+                    <th v-for="(coluna, indice) in ordem.colunas" v-bind:key="coluna">
                         <a href="#" @click.prevent="ordenar(indice)">{{coluna | ucwords}}</a>
                     </th>
                 </tr>
